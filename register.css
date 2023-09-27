@@ -1,0 +1,89 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif!important;
+  box-sizing: border-box;
+  text-decoration:none;
+  list-style: none;
+  background-color: #150e28;
+  color: #fff;
+}
+ 
+.navbar{
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar > a{
+  font-size: 1.5em;
+}
+  .navlinks{
+    text-align: right; 
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 8em;
+  }
+
+.navlinks li {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 1em;
+}
+
+.navlinks li a{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.register{
+  margin-left: 4em;
+}
+
+.navlinks li ::after{
+  content: " ";
+  width: 0%;
+  display: block ;
+  margin: auto;
+  height: 2px;
+  background-color: #943aff;
+  transition: 0.5s ease ;
+}
+
+.navlinks li :hover:after{
+  width: 100%;
+}
+
+.purple-2{
+  font-weight: 700;
+  color: #d434fe;
+  line-height: 44.28px;
+}
+
+/*This is the register container of the page */
+
+.container{
+  min-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form{
+  width: 100%;
+  margin-top: 3rem;
+}
+form input{
+  padding: 12px 10px ;
+  margin-bottom: 5px;
+  outline: none;
+  box-sizing: border-box;
+  border:2px solid #fff;
+}
+
+.kome{
+  width: 80%;
+  display: flex;
+}
