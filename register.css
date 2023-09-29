@@ -15,6 +15,7 @@
   padding: 2% 4%;
   justify-content: space-between;
   align-items: center;
+  margin-left: 7em;
 }
 
 .navbar > a{
@@ -24,7 +25,7 @@
     text-align: right; 
     display: flex; 
     justify-content: space-between;
-    margin-right: 8em;
+    /* margin-right: 8em; */
   }
 
 .navlinks li {
@@ -40,6 +41,12 @@
 
 .register{
   margin-left: 4em;
+}
+
+.registerbaby{
+  border-radius: 4px;
+  border: 2px solid #9A39FF;
+  padding: 2em 10em;
 }
 
 .navlinks li ::after{
@@ -60,6 +67,7 @@
   font-weight: 700;
   color: #d434fe;
   line-height: 44.28px;
+  background: transparent;
 }
 
 /*This is the register container of the page */
@@ -68,22 +76,108 @@
   min-width: 100%;
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  justify-content: flex-start;
 }
+
+/* .images{
+  max-width: 40%;
+} */
 
 .form{
-  width: 100%;
-  margin-top: 3rem;
-}
-form input{
-  padding: 12px 10px ;
-  margin-bottom: 5px;
-  outline: none;
-  box-sizing: border-box;
-  border:2px solid #fff;
+  /* max-width: 40%; */
+   margin: 3em; 
+  /* width: 100%;
+  height: 100%; */
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 3em;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  box-shadow:0px 4px 4px 0px  rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(50px);
+  border-radius: 20px;
 }
 
-.kome{
-  width: 80%;
+.content{
+  width: 100%;
+}
+
+.kome, .kome-2, .kome-3{
+  width: 100%;
   display: flex;
+  background: transparent;
+  justify-content: space-between;
+}
+
+.form h2,.form p,.form h3,.form form, .content{
+  background: transparent;
+}
+
+.form p{
+  font-size: .8em;
+  margin-bottom: 1em;
+}
+
+.form img{
+  size: .7rem;
+  background: transparent;
+}
+
+.form h3{
+  margin-bottom: 1em;
+}
+
+.input-box{
+ margin-top: 1em;
+ background: transparent;
+ flex-basis: 48%;
+
+}
+
+.input-box label{
+  font-size: .8em;
+  margin-bottom: .5em;
+  background: transparent;
+}
+
+.input-box input, .input-box select{
+  margin-top: 5px;
+  width: 200px;
+  height: 30px;
+  padding: .5em;
+  margin: .5em;
+  margin-bottom: 5px;
+  outline: none;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: .2em;
+}
+
+.input-checkbox{
+  background: transparent;
+}
+.agree{
+  background: transparent;
+  margin-left: 1em;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+.register-now{
+ margin-top: 1em;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+ height: 50px;
+}
+
+.register-now button{
+  background: none;
+  font-size: 1em;
+  border: none;
+  color: #fff;
+  outline: none;
 }
